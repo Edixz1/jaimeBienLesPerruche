@@ -87,7 +87,6 @@ class Thread{
     public function display_thread(){
         $title = $this->title;
         $id = $this->id;
-  
         echo "<div class='card bg-dark mb-4'>";
         echo "<div class='card-header text-left '><a href='displaythread.php?threadID=$id&threadTitle=$title'><h5>$title</h5></a>";
         echo "</div>";

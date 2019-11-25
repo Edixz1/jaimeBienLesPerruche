@@ -7,29 +7,4 @@
       </div>
       <button class="btn btn-success btn-lg mb-4" type="submit">Create Thread</button>
   </form>
-
-</div>
-
-<div class="container border"  style="background-color:Red; margin-top:3em;">
-  <h3 class="my-4" style="color:white">ATTENTION PUB!!!!</h3>
-  <form>
-      <div class="form-group">   
-        <?php
-        arsort($_COOKIE);
-        $compteur = 0; 
-        $tAfficher = new Thread();
-
-       
-        foreach($_COOKIE as $x=>$value){
-         
-           if (is_numeric($x) && $compteur < 5)
-          {
-           $tAfficher->load_thread_by_id($x);
-           $tAfficher->display_thread();
-           $compteur++;
-          }
-        }
-        ?>
-      </div>
-  </form>
 </div>
