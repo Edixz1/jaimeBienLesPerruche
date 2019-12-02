@@ -55,7 +55,21 @@
               <button class="btn btn-success mb-sm-3" type="submit">Change Password</button>
             </form>
           </div>
+          <!--Image-->
+          <div class="container align-middle border mb-sm-5">
+            <h3>Modifier image profile</h3>
+            <form method = "post" action = "./DOMAINLOGIC/updatepw.dom.php">
 
+              <div class="form-group">
+                  <label for="newImg">new Image:</label>
+                  <input type="file" class="form-control" name="newImg" id="newImg" required><br>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              
+              <button class="btn btn-success mb-sm-3" type="submit">Change image</button>
+            </form>
+          </div>
 
     </div>
 </div>
