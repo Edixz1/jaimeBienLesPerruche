@@ -30,6 +30,22 @@ class Media{
         return $res;
     }
 
+    public function load_media_by_id($id){
+        $TDG = new mediaTDG();
+        $res = $TDG->get_by_ID($id);
+
+        $res2 = User::get_username_by_ID($res["authorID"]);
+
+        $TDG = null;
+        $this->set_id($res["id"]);
+        $this->set_authorID($res["authorID"]);
+        $this->set_author($res2);
+        $this->set_threadID($res["threadID"]);
+        $this->set_content($res["content"]);
+
+        return $res;
+    }
+
     public static function get_all_media(){
         $TDG = mediaTDG::get_instance();
         $res = $TDG->get_all_media();

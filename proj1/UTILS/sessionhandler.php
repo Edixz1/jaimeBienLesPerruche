@@ -2,8 +2,6 @@
   /*
     fonction qui "set" toutes les variables de session quand un utilisateur
     ce login.
-
-    testyronies
   */
   function login($uID, $uEmail, $uName){
     $_SESSION["userID"] = $uID ;
