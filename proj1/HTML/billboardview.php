@@ -13,8 +13,5 @@
         <div class="col-sm-8 mb-4">
             <?php include "threadlistview.php"; ?>
         </div>
-        <div class="col-sm-4 mb-4">
-            <?php include "threadcreationview.php"; ?>
-        </div>
     </div>
 </div>
