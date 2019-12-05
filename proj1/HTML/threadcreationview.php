@@ -7,4 +7,6 @@
       </div>
       <button class="btn btn-success btn-lg mb-4" type="submit">Create Thread</button>
   </form>
+
 </div>
+
